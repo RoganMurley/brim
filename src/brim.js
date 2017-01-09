@@ -16,7 +16,7 @@ Brim = function Brim (config) {
 
     brim = this;
 
-    if (!config.viewport || !(config.viewport instanceof gajus.Scream)) {
+    if (!config.viewport /*|| !(config.viewport instanceof gajus.Scream)*/) {
         throw new Error('Configuration property "viewport" must be an instance of Scream.');
     }
 
